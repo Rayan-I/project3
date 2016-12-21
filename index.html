@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8">
     <title> Project 3 </title>
-    <link rel="stylesheet" href="css/long-scrolly.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/long-scrolly.css"  rel="stylesheet">
+    <link  href="css/styles.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -22,31 +23,50 @@
 
     <!-- Top Section -->
     <section id="first">
-        <div class="container">
+      <img src="images/rayan.jpg" alt="me">
+      <h1 id="title"> Rayan Ifthikhar</h1>
 
-            <h1 id="title">Rayan Ifthikhar</h1>
+      <div class= "container">
+      <div class= "content">
+        <table id="table">
+          <tr>
+              <td><img src= "images/capture.png" alt="hope this works" class="img"></td>
 
-            <p id="terminal"> I'm supposed to be good at this </p>
+              <td> This is the first time using a css framework, in this case it is bootstrap being used in order to edit various parts of the site more easily than writing all of the css by hand. This makes life much more easy for web developer since they can easily link a css file and be able to use the various different parts inside than to make a new css file.</td>
+          </tr>
+            <tr class="blank_row">
+              <td colspan="3"></td>
+            </tr>
 
-            <div class="content">
+              <tr>
+              <td><img src="images/lab1.png"  alt= "hi" class="img"></td>
 
+              <td> This was the first lab in which people were supposed to make a basic website based on what was learned previously from the semester. This site has content side by side and has tons of placeholder text to make it simpler.</td>
 
-                
-
-            </div><!-- .content -->
+              </tr>
+            </table>
+     
+    
 
        </div><!-- .container -->
 
     </section>
 
-    <Second Section 
-    <section id="second">
-        <div class="container">
+    <section id="second"> 
 
-            <h1>Second Section</h1>
 
-            <div class="content">
-               <script>
+
+
+
+
+    <section id="third">
+
+      <div class="container">
+
+      <h1>Third Section</h1>
+
+      <div class="content">
+       <script>
     function validateForm() {
         var x = document.forms["sentMessage"]["email"].value;
         var atpos = x.indexOf("@");
@@ -157,6 +177,33 @@ $(function() {
        </div><!-- .container -->
 
     </section>
+
+    <section id="fourth">
+    
+
+  <h1]2>Phonebook Entry</h2>
+<form action="database-write.php" method="post">
+  <div>
+  <label for="first_name"> First name: </label>
+  <input type="text" name="firstname">
+  </div>
+
+  <div>
+  <label for="last_name"> Last name: </label>
+  <input type="text" name="lastname">
+  </div>  
+
+  <div>
+  <label for="telephone"> Telephone: </label>
+  <input type="text" name="phone"> 
+  </div>
+
+  <input type="submit" name="send"> 
+</form>
+  <br> <br>
+  Or Go <a href=".">Back to the Index</a>
+</body>
+</html>
 
 </body>
 

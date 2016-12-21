@@ -20,6 +20,7 @@ p { margin-top: 0; }
 	margin: 0 auto;
 	width: 95%;
 	max-width: 960px; 
+
 }
 
 .content {
@@ -29,11 +30,10 @@ p { margin-top: 0; }
 
 #title {
   text-align: center;
-  line-height: 420px;
   color: black;
   font-weight: bold;
   font-size: 65px;
-  margin-bottom: -177px;
+  margin-bottom:50px;
 }
 
 #terminal {
@@ -44,3 +44,16 @@ p { margin-top: 0; }
   margin-right: 0px;
   margin-top: 330px;
 }
+#first{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.img{
+  max-width: 270px;
+  max-height: 270px;
+  padding: 15px;
+}
+
