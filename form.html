@@ -1,7 +1,16 @@
-<?php include "inc/header.inc"; ?>
-<?php include "inc/navbar.inc"; ?>
+<!DOCTYPE html>
+<html>
 
-<!-- JavaScript -->
+<head>
+    <meta charset="utf-8">
+    <title> Project 3 </title>
+    <link href="css/long-scrolly.css"  rel="stylesheet">
+    <link  href="css/styles.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+</head>
+
+<body>
     <script>
     function validateForm() {
         var x = document.forms["sentMessage"]["email"].value;
@@ -29,14 +38,14 @@
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Enter your name please.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Email Address</label>
-                                <input type="email" name="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <input type="email" name="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message=" enter your email address please.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -68,4 +77,32 @@
         </div>
     </section>
 
-<?php include "inc/footer.inc"; ?>
+                
+
+            </div><!-- .content -->
+
+       </div><!-- .container -->
+
+    </section>
+
+ 
+
+<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script>
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 250);
+        return false;
+      }
+    }
+  });
+});
+</script>
+</body>

@@ -1,6 +1,6 @@
 <?php
-$firstname = Trim(stripslashes($_POST['firstname']));
-$lastname = Trim(stripslashes($_POST['lastname']));
+$firstname = Trim(stripslashes($_POST['first_name']));
+$lastname = Trim(stripslashes($_POST['last_name']));
 $phone = Trim(stripslashes($_POST['phone']));
 
 ?>

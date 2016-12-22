@@ -4,6 +4,7 @@
 html, body {
     margin: 0; /* typical - gets rid of the default margin on the BODY */
     height: 100%; /* required - makes sections act like pages */
+    background-color: red;
 }
 
 /*	****************************************
@@ -46,4 +47,4 @@ section {
 }
 
  /* typical - alter the bg for every other section */
-section:nth-child(even) {background-color: #eee; }
+section:nth-child(even) {background-color: red; }
