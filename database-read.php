@@ -2,7 +2,7 @@
 	
  <?php include "db-info.php";?>
 <?php
-	$connection = mysqli_connect($dbhost, $dbuser, $dbname);
+	$connection = mysqli_connect($dbhost,$dbuser, $dbname);
 
 
 

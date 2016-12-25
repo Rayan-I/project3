@@ -1,8 +1,16 @@
 <?php
-$firstname = Trim(stripslashes($_POST['first_name']));
-$lastname = Trim(stripslashes($_POST['last_name']));
-$phone = Trim(stripslashes($_POST['phone']));
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
+	$dbhost = "localhost";
+	$dbuser = "urcscon3_rifthik2"; 
+	$dbpass = "coffee1N/!";  
+	$dbname = "urcscon3_rifthik";
+
+$name = Trim(stripslashes($_POST['name']));
+$email = Trim(stripslashes($_POST['email']));
+$phone = Trim(stripslashes($_POST['phone']));
+$message = Trim(stripslashes($_POST['message']));
 ?>
 
 <?php include "db-info.php";?>
@@ -12,7 +20,7 @@ $phone = Trim(stripslashes($_POST['phone']));
 
 <?php
 
-$query = "INSERT INTO friends (first_name, last_name, phone) VALUES ('$firstname', '$lastname', '$phone')";
+$query = "INSERT INTO friends (first_name, last_name, phone) VALUES ('$name', '$email', '$phone')";
 $result = mysqli_query($connection, $query);
 $NumberOfRowsAffected = mysqli_affected_rows($connection);
 if($NumberOfRowsAffected < 1 ) {
